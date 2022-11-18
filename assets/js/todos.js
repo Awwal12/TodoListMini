@@ -5,7 +5,7 @@ $("ul").on("click","li",function(){
   $(this).css("color", "grey",);
  $(this).css("text-decoration", "line-through");
  } else {
-  $(this).css("color", "black",);
+  $(this).css("color", "azure",);
  $(this).css("text-decoration", "none");
  }
 
@@ -26,6 +26,9 @@ var newText = $(this).val();
 //reset the val
 $(this).val("");
 //create a new li and add to ul
-$("ul").append("<li><span>X</span> " + newText + "</li>");  
+$("ul").append("<li><span><i class='fa-solid fa-trash-can'></i></span> " + newText + "</li>");  
 };
+});
+$(".fa-pencil").on("click", () =>{
+$('input').fadeToggle();
 });
